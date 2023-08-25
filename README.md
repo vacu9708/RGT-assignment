@@ -30,4 +30,4 @@ Spring, MySQL, JWT, OAuth, Docker
 1. docker, docker-compose 설치
 2. build 폴더
 3. build.bat 실행
-4. docker-compose.bat 실행
+4. docker 명령어 입력: docker-compose up -d
