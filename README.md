@@ -36,7 +36,7 @@ Spring, MySQL, JWT, OAuth, Docker
 
 # 프로그램 실행 방법
 1. docker, docker-compose 설치
-2. build 폴더에서 build.bat 실행
+2. build_and_run 폴더로 가서 build.bat 실행
 3. docker network create myNetwork
 4. docker-compose-mysql 폴더에서 docker-compose up -d
 5. schema.sql 실행
