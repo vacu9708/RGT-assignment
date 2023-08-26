@@ -1,5 +1,3 @@
-![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/ee6e0c5e-3a4f-494a-ab07-46f56ac8b3d6)![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/662e7f91-d3b0-4a1b-b212-1620d5047441)# RGT-assignment
-
 ## 사용한 것
 Spring, MySQL, JWT, OAuth, Docker
 
