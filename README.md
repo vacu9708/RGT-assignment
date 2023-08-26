@@ -1,4 +1,4 @@
-## 사용한 것
+## 사용한 것들
 Spring, MySQL, JWT, OAuth, Docker
 
 ## 1. RESTful API 작성
@@ -37,7 +37,7 @@ Spring, MySQL, JWT, OAuth, Docker
 # 프로그램 실행 방법
 1. docker, docker-compose 설치
 2. build 폴더에서 build.bat 실행
-3. docekr network create myNetwork
+3. docker network create myNetwork
 4. docker-compose-mysql 폴더에서 docker-compose up -d
 5. schema.sql 실행
 6. docker-compose-app 폴더에서 docekr-compose up -d
