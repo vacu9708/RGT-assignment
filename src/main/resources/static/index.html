@@ -34,10 +34,17 @@
         const include_granted_scopes = 'include_granted_scopes=false&';
         // const prompt = 'prompt=consent&';
         // const access_type = 'access_type=offline&';
-        const scope = 'scope=https://www.googleapis.com/auth/drive.metadata.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile';
+        const scope = 'scope=https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile';
         document.getElementById('signInWithGoogle').addEventListener("click", () => {
             window.location.href = base_url + client_id + redirect_uri + response_type + include_granted_scopes + scope;
         });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        if (token) {
+            console.log("Your token is: "+token);
+            sessionStorage.setItem('jwt', token);
+        }
     </script>
 </body>
 </html>

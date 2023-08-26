@@ -7,11 +7,13 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.servlet.view.RedirectView;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rgt.rgt.user.utils.JwtUtils;
 
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
 @Component
@@ -20,7 +22,7 @@ public class UserService {
     final UserRepository userRepository;
     @Value("${google.client_secret}") String client_secret;
 
-    String OAuthGoogleCallback(String code) {
+    RedirectView OAuthGoogleCallback(HttpServletResponse response, String code) {
         // Get access token from code
         String client_id="&client_id=974689523976-2fodc0j4g72b5qma4cc4ppsk1dft50f4.apps.googleusercontent.com";
         String tokenResponse = WebClient.create("https://oauth2.googleapis.com")
@@ -62,6 +64,7 @@ public class UserService {
         Map<String, Object> accessTokenClaims = new HashMap<>();
         accessTokenClaims.put("userId", id);
         String accessToken = JwtUtils.generateToken(accessTokenClaims, 1800000);
-        return accessToken;
+        // response.setHeader("Location", "http://localhost:8080/?token=" + accessToken);
+        return new RedirectView("http://localhost:8080/?token=" + accessToken);
     }
 }

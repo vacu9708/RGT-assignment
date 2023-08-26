@@ -3,7 +3,9 @@ package com.rgt.rgt.user;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
 
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -17,7 +19,7 @@ public class UserController {
     }
 
     @GetMapping("/OAuth/google/callback")
-    String OAuthGoogleCallback(@Param("code") String code) {
-        return userService.OAuthGoogleCallback(code);
+    RedirectView OAuthGoogleCallback(HttpServletResponse response, @Param("code") String code) {
+        return userService.OAuthGoogleCallback(response, code);
     }
 }
