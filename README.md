@@ -1,4 +1,4 @@
-## 사용한 것
+## 사용한 것들
 Spring, MySQL, JWT, OAuth, Docker
 
 ## 1. RESTful API 작성
@@ -15,7 +15,7 @@ Spring, MySQL, JWT, OAuth, Docker
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/531cfff7-78c4-4e25-aec1-61cb9f5553e9)<br>
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/7eec3e18-87f4-4faf-bc7f-2603e74b53ad)
 
-### 2-2. 데이터 수
+### 2-2. 데이터 수정
 #### `UPDATE 이전`
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/9e687843-7863-46ce-bb33-8f6159cf2fd7)
 #### `UPDATE 이후`
@@ -32,14 +32,12 @@ Spring, MySQL, JWT, OAuth, Docker
 #### 4. 첫 로그인이며 존재하지 않는 이메일이므로 회원가입 완료
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/5fb7adf8-1112-418f-818f-0e9c527b0f15)<br>
 #### 5. 로그인 완료 후 JWT 발급 완료
-![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/cf59b268-be21-455d-a310-a1a31626352c)<br>
-
-
+![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/ab3403f1-ad80-48c2-87fa-25313fdf352e)
 
 # 프로그램 실행 방법
 1. docker, docker-compose 설치
 2. build 폴더에서 build.bat 실행
-3. docekr network create myNetwork
+3. docker network create myNetwork
 4. docker-compose-mysql 폴더에서 docker-compose up -d
 5. schema.sql 실행
 6. docker-compose-app 폴더에서 docekr-compose up -d
