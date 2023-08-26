@@ -32,9 +32,7 @@ Spring, MySQL, JWT, OAuth, Docker
 #### 4. 첫 로그인이며 존재하지 않는 이메일이므로 회원가입 완료
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/5fb7adf8-1112-418f-818f-0e9c527b0f15)<br>
 #### 5. 로그인 완료 후 JWT 발급 완료
-![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/cf59b268-be21-455d-a310-a1a31626352c)<br>
-
-
+![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/ab3403f1-ad80-48c2-87fa-25313fdf352e)
 
 # 프로그램 실행 방법
 1. docker, docker-compose 설치
