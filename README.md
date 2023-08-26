@@ -31,7 +31,7 @@ Spring, MySQL, JWT, OAuth, Docker
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/62b623b0-4321-441c-b5b1-4ed13257a428)<br>
 #### 2. 구글로 로그인 클릭
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/ab561bc4-00e9-493e-958b-eb5bfe33e5d6)<br>
-#### 4. 존재하지 않는 이메일이므로 회원가입 완료
+#### 4. 첫 로그인이며 존재하지 않는 이메일이므로 회원가입 완료
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/5fb7adf8-1112-418f-818f-0e9c527b0f15)<br>
 #### 5. 로그인 완료 후 JWT 발급 완료
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/cf59b268-be21-455d-a310-a1a31626352c)<br>
