@@ -15,7 +15,7 @@ Spring, MySQL, JWT, OAuth, Docker
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/531cfff7-78c4-4e25-aec1-61cb9f5553e9)<br>
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/7eec3e18-87f4-4faf-bc7f-2603e74b53ad)
 
-### 2-2. 데이터 수
+### 2-2. 데이터 수정
 #### `UPDATE 이전`
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/9e687843-7863-46ce-bb33-8f6159cf2fd7)
 #### `UPDATE 이후`
