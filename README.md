@@ -1,4 +1,4 @@
-# RGT-assignment
+![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/ee6e0c5e-3a4f-494a-ab07-46f56ac8b3d6)![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/662e7f91-d3b0-4a1b-b212-1620d5047441)# RGT-assignment
 
 ## 사용한 것
 Spring, MySQL, JWT, OAuth, Docker
@@ -26,8 +26,22 @@ Spring, MySQL, JWT, OAuth, Docker
 #### `카페테리아는 INSERT 될 때 자동으로 체크되어 입력되는 즉시 카페라떼로 UPDATE`
 ![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/91030189-6873-4524-9aa8-020f9e041514)
 
+### 3. Google OAuth 2.0 로그인
+#### 1. Login with google 사용 등록 완료
+![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/62b623b0-4321-441c-b5b1-4ed13257a428)<br>
+#### 2. 구글로 로그인 클릭
+![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/ab561bc4-00e9-493e-958b-eb5bfe33e5d6)<br>
+#### 4. 존재하지 않는 이메일이므로 회원가입 완료
+![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/5fb7adf8-1112-418f-818f-0e9c527b0f15)<br>
+#### 5. 로그인 완료 후 JWT 발급 완료
+![image](https://github.com/vacu9708/RGT-assignment/assets/67142421/cf59b268-be21-455d-a310-a1a31626352c)<br>
+
+
+
 # 프로그램 실행 방법
 1. docker, docker-compose 설치
-2. build 폴더
-3. build.bat 실행
-4. docker 명령어 입력: docker-compose up -d
+2. build 폴더에서 build.bat 실행
+3. docekr network create myNetwork
+4. docker-compose-mysql 폴더에서 docker-compose up -d
+5. schema.sql 실행
+6. docker-compose-app 폴더에서 docekr-compose up -d
