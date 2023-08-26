@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <button id="signInWithGoogle"></button>
+    
+    <!-- <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+        data-client_id="974689523976-2fodc0j4g72b5qma4cc4ppsk1dft50f4.apps.googleusercontent.com"
+        data-login_uri="http://localhost:8080/OAuth/google/callback"
+        data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+    </div> -->
+
+    <script>
+        // Change data-login_uri of g_id_onload
+        const base_url = 'https://accounts.google.com/o/oauth2/v2/auth?';
+        const client_id = 'client_id=974689523976-2fodc0j4g72b5qma4cc4ppsk1dft50f4.apps.googleusercontent.com&';
+        const redirect_uri = 'redirect_uri=http://localhost:8080/OAuth/google/callback&';
+        const response_type = 'response_type=code&';
+        const state = 'state=state_parameter_passthrough_value&';
+        const include_granted_scopes = 'include_granted_scopes=false&';
+        // const prompt = 'prompt=consent&';
+        // const access_type = 'access_type=offline&';
+        const scope = 'scope=https://www.googleapis.com/auth/drive.metadata.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile';
+        document.getElementById('signInWithGoogle').addEventListener("click", () => {
+            window.location.href = base_url + client_id + redirect_uri + response_type + include_granted_scopes + scope;
+        });
+    </script>
+</body>
+</html>
