@@ -1,0 +1,19 @@
+version: '3'
+services:
+  rgt:
+    build:
+      context: ../../
+      dockerfile: Dockerfile
+    image: rgt:rgt
+    container_name: rgt
+    ports:
+      - 8080:8080
+    environment:
+      - db_host=mySql_rgt
+    networks:
+      - myNetwork
+
+networks:
+  myNetwork:
+    driver: bridge
+    external: true

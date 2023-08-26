@@ -1,0 +1,25 @@
+version: '3'
+services:
+  mySql_rgt:
+    image: mysql:8
+    container_name: mySql_rgt
+    # restart: always
+    environment:
+      MYSQL_DATABASE: 'rgt'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: '123' # You can use whatever password you like
+      MYSQL_ROOT_PASSWORD: '123' # Password for root access
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    # Where our data will be persisted
+    volumes:
+      - /mysql_data:/mysql_data
+    networks:
+      - myNetwork
+
+networks:
+  myNetwork:
+    driver: bridge
+    external: true
