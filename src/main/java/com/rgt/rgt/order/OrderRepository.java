@@ -25,12 +25,12 @@ public interface OrderRepository extends JpaRepository<OrderEntity, String>{
     //     "GROUP BY orderId HAVING COUNT(orderId) > 1) o2 ON "+
     //     "o1.orderId = o2.orderId AND o1.dateTime != o2.earliestDateTime", nativeQuery = true)
     @Query(value = "DELETE o1 FROM orders o1 JOIN ("+
-        "SELECT MIN(id) as minId, orderId FROM orders GROUP BY orderId) o2 "+
-        "ON o1.id != o2.minId and o1.orderId = o2.orderId", nativeQuery = true)
+        "SELECT MIN(id) as min_id, order_id FROM orders GROUP BY order_id) o2 "+
+        "ON o1.id != o2.min_id and o1.order_id = o2.order_id", nativeQuery = true)
     @Modifying
     void deleteDuplicatesExceptOneByOrderId();
 
     @Modifying
-    @Query(value = "UPDATE orders SET productName = '카페라떼' WHERE productName = '카페테리아'", nativeQuery = true)
+    @Query(value = "UPDATE orders SET product_name = '카페라떼' WHERE product_name = '카페테리아'", nativeQuery = true)
     void updateCafeteria();
 }
